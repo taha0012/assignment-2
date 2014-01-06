@@ -1,0 +1,107 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*vender prefixes*/
+/* does the same thing as the HTML <meta viewport> tag, but newer*/
+@-moz-viewport { width: device-width; scale:1; }
+@-ms-viewport { width: device-width; scale:1; }
+@-o-viewport { width: device-width; scale:1; }
+@-webkit-viewport { width: device-width; scale:1; }
+@viewport { width: device-width; scale:1; }
+
+html{
+	/*
+	Stops small screen brousers from changing font size
+	*/
+	-moz-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+}
+
+html, body{
+	font-family: sans-serif;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	
+}
+
+main{
+	width: 90%;
+	padding: 0 5%;
+	background-color: #CCC;
+}
+
+.masthead {
+	background-color: #000;
+	height: 7rem;
+	position: fixed;
+	width: 100%;
+	z-index: 100; /* Puts this emlement on top of the rest */
+}
+
+.logo {
+	width: 15%;
+	float: left;
+	margin: 1rem 1rem;
+}
+
+nav ul {
+	text-align: center; 
+}
+
+nav li {
+	display: inline;	
+}
+
+nav a {
+	display: inline-block;
+	margin: 1rem 0rem;
+	color: #FFF;
+	padding: 1.5rem 2%;
+	text-decoration: underline;
+	background-color: #999;
+	border: 4px solid #999; 
+	border-radius: 30px; 
+}
+
+.wrapper {
+	padding-top: 8rem;
+}
+
+h1 {
+	font-size: 2rem;
+	margin-top:0.5rem;
+	margin-bottom:6rem;
+	color: #000;
+}
+
+h2 {
+	font-size: 1.2rem;
+	margin-bottom: 1.5rem;
+}
+
+.placeholder {
+	width: 50%;
+	float: left;
+	margin: 0 2.5% 1.5rem 0;
+}
+	
+/* --------------------------------------------------------------------- Footer */
+
+.bottom {
+	background-color: #FFF;
+	height: 12rem;
+	text-align: center;
+	padding-top: 1rem;
+}
+
+.bottom a {
+	color: #000;
+	font-size: 1.2rem;
+	text-decoration: none;
+	background-color: #999;
+	border: 1px solid #999; /* Width Style Color */   
+	border-radius: 110px; 
+}	
